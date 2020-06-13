@@ -1,0 +1,57 @@
+.feature-area{
+    padding: 50px;
+    background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.7)), url(../assets/pic03.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.title h2,p,h3,i {
+    color: white;
+    padding: 1em;
+}
+
+.single-feature{
+    position: relative;
+    width: 325px;
+    float: left;
+    padding: 30px 0;
+    text-align: center;
+    border-right: 1px solid #65c8e5;
+    border-bottom: 1px solid #65c8e5;
+    transition: all .3s ease-in-out;   
+    cursor: pointer;
+
+}
+
+.single-feature i.fa  {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: #00a7dd;
+    color: floralwhite;
+    text-align: center;
+    padding: 20px;
+}
+
+.single-feature:hover i.fa  {
+    border: 2px solid #00a7dd;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: #fff;
+    color: #00a7dd;
+    text-align: center;
+    padding: 20px;
+    transition: .8s ease;
+}
+
+.single-feature:nth-of-type(even){
+    border-right: none;
+}
+
+.single-feature:nth-last-child(2){
+    border-bottom: none;
+}
+
+.single-feature:last-child{
+    border-bottom: none;
+}

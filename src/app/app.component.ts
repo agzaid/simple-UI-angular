@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { NgwWowService } from 'ngx-wow';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'wooow';
+  constructor(private wowService: NgwWowService, ) {
+      
+   
+    // this.wowService.init();
+  }
+
+
+
 }

@@ -1,0 +1,118 @@
+.intro-area{
+    position: relative;
+    padding: 180px 0;
+    text-align: center;
+    box-shadow: 1px 0px 30px 9px rgb(146, 197, 214);
+    margin:2em;
+}
+
+.sub-heading{
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.sub-heading:before {
+    content: "";
+    position: absolute;
+    background-color: deepskyblue;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 1px;
+    z-index: 1;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+    
+}
+
+.sub-heading:hover:before{
+    width: 24%;
+    margin-left: -22px;
+}
+
+.sub-heading:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(78, 151, 175);
+    top: 100%;
+    left: 50%;
+    margin-left: -22%;
+    width: 24%;
+    height: 1px;
+}
+
+.sub-heading p {
+    color: rgb(68, 90, 112);
+    display: inline-block;
+    padding: 0 0 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: .025em;
+}
+
+.intro-block{
+    position: relative;
+    background-color: #e7e7e7;
+    margin: 50px 0 0 ;
+    padding: 70px 25px 40px ;
+    text-align: center;
+}
+
+.intro-block:hover, .intro-block.active{
+    background-color: #0aabe1;
+    cursor: pointer;
+}
+
+.intro-block:hover{
+    transition: .6s ease;
+
+}
+
+.intro-block .intro-icon{
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.intro-block span {
+    padding: 5px;
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    color: white;
+    background: rgb(68, 90, 112);
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #cceef9;
+}
+
+.intro-block:hover span, .intro-block.active span{
+    background: #f7f7f7;
+    color: deepskyblue;
+    border-radius: 50%;
+    padding: 5px;
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    box-shadow: 0 0 0 10px deepskyblue;
+} 
+
+.intro-block h3 {
+    font-size: 18px;
+    color: deepskyblue;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.intro-block p{
+    color: dimgrey;
+}
+
+.intro-block:hover h3, .intro-block:hover p{
+    color: gainsboro;
+}
